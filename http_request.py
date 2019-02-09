@@ -32,7 +32,7 @@ def translate(path_in, lang='ru'):
     name = f'{path_in}'
     translate_file = translate_it(read_file, lang)
 
-    with open(f'translated/{name}', 'w') as f:
+    with open(f'translated/{name}', 'w', encoding='utf8') as f:
         print('Запись перевода в файл:', name)
         f.write(translate_file)
 
