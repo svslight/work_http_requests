@@ -30,7 +30,8 @@ def translate(path_in, to_lang, from_lang='ru'):
     with open(path_in) as file_t:
         name = f'{path_in}'
         translate_file = translate_it(file_t, to_lang, from_lang)
-        with open(os.path.join(r'd:', '\Projects', 'Netology', 'work_http_requests', 'translated', 'name'), 'w', encoding='utf8') as f:
+
+        with open(os.path.join(f'd:', '\Projects', 'Netology', 'work_http_requests', 'translated', f'{path_in}'), 'w', encoding='utf8') as f:
             print('Запись перевода в файл:', name)
             f.write(translate_file)
 
