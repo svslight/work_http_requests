@@ -36,6 +36,6 @@ def translate(path_in, to_lang, from_lang='ru'):
             f.write(translate_file)
 
 
-translate('DE.txt', 'de', 'en')
-translate('ES.txt', 'es')
-translate('FR.txt', 'fr', 'zh')
+translate('DE.txt', 'de', 'ru')
+translate('ES.txt', 'es', 'en')
+translate('FR.txt', 'fr', 'de')
